@@ -16,7 +16,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+::placeholder {
+    font-size: 12px;
+}
 main {
     width: 100%;
     max-width: 60rem;
@@ -54,6 +56,7 @@ main {
     align-items: center;
     background-color: white;
     border-radius: 1rem;
+    box-shadow: 2px 2px 2px 10px rgba(138, 137, 137, 0.2);
 }
 
 .box-blue {
@@ -74,6 +77,8 @@ main {
     display: flex;
     align-items: center;
     color: #023E8C;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .formulario {
@@ -96,9 +101,11 @@ main {
     gap: 1rem;
 }
 
-.linha-dupla input, .linha-dupla button {
+/* .linha-dupla input 
+,.linha-dupla button 
+{
     flex: 1;
-}
+} */
 
 .formulario button {
     align-self: flex-end;
@@ -110,8 +117,10 @@ main {
     font-weight: bold;
     font-size: 0.9rem;
     cursor: pointer;
+    margin: 0 auto;
 }
-
-
-
-
+.dtVencimento{
+    background-color: yellow;
+    width: 125px;
+    margin: 0 50px;
+}
