@@ -16,7 +16,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+::placeholder {
+    font-size: 12px;
+}
 main {
     width: 100%;
     max-width: 60rem;
@@ -30,6 +32,7 @@ main {
 .container {
     display: flex;
     width: 100%;
+    background: linear-gradient(225deg, rgba(17, 37, 81, 1) 0%, rgba(1, 13, 39, 1) 51%);
 }
 
 .box-grey {
@@ -54,6 +57,7 @@ main {
     align-items: center;
     background-color: white;
     border-radius: 1rem;
+    box-shadow: 2px 2px 2px 10px rgba(138, 137, 137, 0.2);
 }
 
 .box-blue {
@@ -74,6 +78,8 @@ main {
     display: flex;
     align-items: center;
     color: #023E8C;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .formulario {
@@ -96,9 +102,11 @@ main {
     gap: 1rem;
 }
 
-.linha-dupla input, .linha-dupla button {
+/* .linha-dupla input, 
+    .linha-dupla button 
+{
     flex: 1;
-}
+} */
 
 .formulario button {
     align-self: flex-end;
@@ -110,8 +118,68 @@ main {
     font-weight: bold;
     font-size: 0.9rem;
     cursor: pointer;
+    margin: 0 auto;
 }
 
+.dtVencimento{
+    background-color: yellow;
+    width: 125px;
+    margin: 0 50px;
+}
+.btnEnviar700px{
+    display: none;
+}
+.todo{
+    display: none;
+}
+@media (max-width: 800px) {
+    .box-blue, .btnEnviar {
+        display: none;
+    }    
+    body{
+        display: inline;
+    }
+    .todo{
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0 1rem 0;
+        height: 20%;
+    }
+    .container{
+        justify-content: center;
+    }
+    .formulario input {
+        width: 92%;
+        margin: 0 1rem 0 1rem;
+    }
+    .btnEnviar700px{
+        display: flex;
+    }
+    .box-grey{
+        height: 95%;
+    }
+}
 
+@media (max-width: 600px) {
+    .linha-dupla{
+        display: inline;
+    }
+    .formulario input {
+        width: 80%;
+    }
+    .dtVencimento{
+        margin-top: 1rem !important;
+    }
+    .box-grey{
+        height: 99%;
+    }
+    .box-form{
+        max-height: 28rem;
+    }
+    .box-form h1{
+        font-size: 20px;
+        text-align: center;
+    }
+}
 
 
