@@ -1,0 +1,34 @@
+
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0; 
+
+    background: #112551;
+    background: linear-gradient(225deg, #112550 0%, rgba(1, 13, 39, 1) 51%);
+ }
+
+#confirma{
+    padding:40px;
+    text-align:center ;
+    width: 600px;
+    background-color:white;
+    border-radius:30px ;
+    color:#112550;
+    border: solid, 3px, #ec1f89 ;
+  
+}
+
+#Btn{
+    width: 100px ;
+    padding:8px ;
+    background-color:#ec1f89;
+    border:solid #ec1f89 10px;
+    border-radius:10px;
+    color:#023E8C;
+   
+    text-decoration: none ;
+}
