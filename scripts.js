@@ -1,12 +1,13 @@
 const form = document.getElementById('formulario');
+const alerta = document.getElementById('alertaSucesso');
 
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
+form.addEventListener('submit', function () {
+  // Mostrar o alerta
+  alerta.classList.add('mostrar');
 
-  if (form.checkValidity()) {
-    alert('Todos os dados foram preenchidos com sucesso!');
-    form.reset();
-  } else {
-    form.reportValidity(); 
-  }
+  // Esconder depois de 3 segundos
+  setTimeout(() => {
+    alerta.classList.remove('mostrar');
+  }, 3000);
 });
+
