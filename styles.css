@@ -140,6 +140,30 @@ input.dtVencimento {
 }
 
 
+
+.alerta-sucesso {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #28a745;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.alerta-sucesso.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 .btnEnviar700px{
     display: none;
 }
