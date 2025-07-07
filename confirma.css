@@ -1,3 +1,10 @@
+html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Inter Tight", sans-serif;
+}
 
  body{
     display: flex;
@@ -12,7 +19,7 @@
  }
 
 #confirma{
-    padding:40px;
+    padding:60px;
     text-align:center ;
     width: 600px;
     background-color:white;
@@ -21,14 +28,20 @@
     border: solid, 3px, #ec1f89 ;
   
 }
+#confirma h1{
+    margin-bottom: 3rem;
+}
 
 #Btn{
-    width: 100px ;
-    padding:8px ;
-    background-color:#ec1f89;
-    border:solid #ec1f89 10px;
-    border-radius:10px;
-    color:#023E8C;
-   
-    text-decoration: none ;
+    align-self: flex-end;
+        background-color: #ec1f89;
+        color: white;
+        border: none;
+        padding: .9rem 2rem;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        margin: 0 auto;
+        text-decoration: none;
 }
