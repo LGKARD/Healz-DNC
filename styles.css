@@ -137,6 +137,12 @@ input.dtVencimento {
     font-size: 0.9rem;
     cursor: pointer;
     margin: 0 auto;
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
+}
+
+.formulario button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 
