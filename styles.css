@@ -167,9 +167,6 @@ input.dtVencimento {
   opacity: 1;
   transform: translateY(0);
 }
-
-
-
 .btnEnviar700px{
     display: none;
 }
@@ -216,6 +213,7 @@ input.dtVencimento {
     }
     .box-grey{
         height: 99%;
+        width: 70% !important;
     }
     .box-form{
         max-height: 28rem;
@@ -225,5 +223,9 @@ input.dtVencimento {
         text-align: center;
     }
 }
-
-
+@media (max-width: 500px) {
+        .box-grey{
+        height: 99%;
+        width: 90% !important;
+    }
+}
