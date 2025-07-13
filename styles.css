@@ -32,7 +32,9 @@ main {
 .container {
     display: flex;
     width: 100%;
-    background: linear-gradient(225deg, rgba(17, 37, 81, 1) 0%, rgba(1, 13, 39, 1) 51%);
+    background: linear-gradient(225deg, rgb(11, 30, 71) 0%, rgba(1, 13, 39, 1) 51%);
+    border-radius: 1rem;
+
 }
 
 .box-grey {
@@ -70,6 +72,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 }
 
 .box-blue img {
@@ -188,6 +192,8 @@ input.dtVencimento {
     }
     .container{
         justify-content: center;
+        border-radius: 0;
+
     }
     .formulario input {
         width: 92%;
@@ -198,7 +204,15 @@ input.dtVencimento {
     }
     .box-grey{
         height: 95%;
+        border-radius: 1rem;
     }
+    img {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    
 }
 
 @media (max-width: 600px) {
@@ -222,10 +236,30 @@ input.dtVencimento {
         font-size: 20px;
         text-align: center;
     }
+    img {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        justify-content: center;
+        border-radius: 0;
+        
+    }
+    
 }
 @media (max-width: 500px) {
         .box-grey{
         height: 99%;
         width: 90% !important;
     }
+    img {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
 }
