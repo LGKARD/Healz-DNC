@@ -34,6 +34,7 @@ main {
     width: 100%;
     background: linear-gradient(225deg, rgb(11, 30, 71) 0%, rgba(1, 13, 39, 1) 51%);
     border-radius: 1rem;
+
 }
 
 .box-grey {
@@ -71,6 +72,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -191,7 +193,7 @@ input.dtVencimento {
     .container{
         justify-content: center;
         border-radius: 0;
-        
+
     }
     .formulario input {
         width: 92%;
@@ -260,5 +262,4 @@ input.dtVencimento {
         margin-top: 1rem;
     }
     
-
 }
