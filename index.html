@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/png" href="assets\logo.png">
+    <title>Healz</title>
+  </head>
+  <body>
+    <div class="todo">
+      <img src="./assets/logo_branca 2.svg" width="100%" alt="" />
+    </div>
+    <main>
+      <div class="container">
+        <div class="box-grey">
+          <div class="box-form">
+            <h1>Formulario de cadastro</h1>
+
+            <form id="formulario" class="formulario" action="https://api.sheetmonkey.io/form/g2NdY86YPBfbZwdpyjVLoc" method="post">
+              <input type="text" id="nome" name="Nome"  required placeholder="Nome Completo" />
+              <input type="text" id="cidade" name="Cidade"  required placeholder="Cidade + Estado" />
+              <input type="text" id="plano" name="Plano" required placeholder="Plano de Saúde" />
+
+              <div class="linha-dupla">
+                <input type="text" id="numeroCarteirinha" name="matricula" required placeholder="Nº Da Carteirinha" />
+                <input type="date" id="data" name="Datas" class="dtVencimento" required placeholder="data de vencimento" />
+              </div>
+              <div class="linha-dupla">
+                <input type="hidden" name="Data_do_Acesso" value="x-sheetmonkey-current-date-time" />
+                <input type="tel" id="telefone" name="Telefones" required placeholder="DDD+WhatsApp " />
+                <button type="submit" class="btnEnviar" id="botaoEnviar">Enviar</button>
+              </div>
+              <button type="submit" class="btnEnviar700px">Enviar</button>
+            </form>
+            <div id="alertaSucesso" class="alerta-sucesso">✅ Formulário enviado com sucesso!</div>
+          </div>
+        </div>
+        <div class="box-blue">
+          <img src="./assets/logo_branca 2.svg" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts.js"></script>                              
+     
+
+  </body>
+</html>
