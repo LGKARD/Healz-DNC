@@ -7,6 +7,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.4/tabletop.min.js"></script>
+
      <script src="https://kit.fontawesome.com/07575a2303.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dados.css">
     <title>Document</title>
@@ -21,7 +23,7 @@
 
         
 
-               
+              
         </div>
 
 
@@ -29,7 +31,7 @@
             
             <nav>
                 
-                    <a href=""><i class="fa-solid fa-stethoscope"> </i></a>
+                    <a href="index.html"><i class="fa-solid fa-stethoscope"> </i></a>
                     
                 
             </nav>
@@ -43,37 +45,27 @@
       <div id="bloco">
         <h1>Consultas Agendadas</h1>
 
-        <input type="text" placeholder="Digite cpf do paciente">
+        <input type="text" placeholder="Digite cpf do paciente"  id="inputCpf"> <button id="btnBuscar">Buscar</button>
 
         </div>
-
-  <table>
+ <table id="tabelaDados">
     <thead>
       <tr>
         <th>Nome</th>
-        <th>Cidade</th>
-        <th>Matrícula</th>
-        <th>Consulta</th>
-        <th>Horario</th>
-        <th>Funçoes</th>
-
-       
+  
+       <th>Data</th>
+       <th>Hora</th>
+        <th>Telefone</th>
+        <th>funçoes</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Maria Silva</td>
-        <td>São Paulo</td>
-      
-        <td>123456</td>
-        <td>15/07/2025</td>
-        <td>15:00</td>
-        <td><a href="">checagem</a></td>
-      </tr>
-    <!-- Adicione mais linhas aqui -->
+      <!-- Os dados virão aqui -->
     </tbody>
   </table>
     </main>
-    
+      <script src="dados.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+
 </body>
 </html>
