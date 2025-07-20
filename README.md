@@ -1,7 +1,7 @@
 # Sistema de Check-in com Validação de Horário
 
 **Documentação Técnica e Acadêmica**  
-**Autor:** Luiz Guilherme rid #195440
+**Autor:** Luiz Guilherme rid #195440  
 **Data:** 20/07/2025  
 
 ---
@@ -97,13 +97,9 @@ Essas métricas poderão ser observadas por meio da análise dos registros da pl
 **Fluxo ilustrativo:**
 
 [Usuário Preenche] -> [Validação dos Campos] -> [Comparação com a Hora da Consulta]
-->
-(Diferença > 15 min) -> Alerta + Bloqueio do envio
+->  
+(Diferença > 15 min) -> Alerta + Bloqueio do envio  
 (Diferença <= 15 min) -> Envio permitido e registro na planilha
-
-yaml
-Copiar
-Editar
 
 ---
 
