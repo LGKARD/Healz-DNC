@@ -10,9 +10,8 @@
       rel="stylesheet"
     />
 
-    
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" type="image/png" href="assets\logo.png">
+    <link rel="shortcut icon" type="image/png" href="assets\logo.png" />
     <title>Healz</title>
   </head>
   <body>
@@ -23,14 +22,37 @@
       <div class="container">
         <div class="box-grey">
           <div class="box-form">
-            <h1>Formulario de cadastro</h1>
+            <h1>Formulario de check-in</h1>
 
-            <form id="formulario" class="formulario" action="https://api.sheetmonkey.io/form/g2NdY86YPBfbZwdpyjVLoc" method="post">
-              <input type="text" id="nome" name="Nome"  required placeholder="Nome Completo" />
-              <input type="text" id="cidade" name="Cidade"  required placeholder="Cidade + Estado" />
-              <input type="text" id="plano" name="Plano" required placeholder="Plano de Saúde" />
+            <form
+              id="formulario"
+              class="formulario"
+              action="https://api.sheetmonkey.io/form/g2NdY86YPBfbZwdpyjVLoc"
+              method="post"
+            >
+              <input
+                type="text"
+                id="nome"
+                name="Nome"
+                required
+                placeholder="Nome Completo"
+              />
+              <input
+                type="text"
+                id="cidade"
+                name="Cidade"
+                required
+                placeholder="Cidade + Estado"
+              />
+              <input
+                type="text"
+                id="plano"
+                name="Plano"
+                required
+                placeholder="Plano de Saúde"
+              />
 
-              <div class="linha-dupla">
+              <div class="linha-dupla
                 <input type="number" id="numeroCarteirinha" name="matricula" required placeholder="Nº CPF" />
 
                 <input type="date" id="data" name="Consulta" class="dtVencimento" required placeholder="data de vencimento" />
@@ -53,17 +75,48 @@
                       <option value="18:00">22:00</option>
                          <option value="18:00">23:00</option>
                 </select>
+=======
+                <input
+                  type="text"
+                  id="numeroCarteirinha"
+                  name="matricula"
+                  required
+                  placeholder="Nº Da Carteirinha"
+                />
+
+                <input
+                  type="date"
+                  id="data"
+                  name="Datas"
+                  class="dtVencimento"
+                  required
+                  placeholder="data de vencimento"
+    
               </div>
               <div class="linha-dupla">
-                <input type="hidden" name="Data_do_Acesso" value="x-sheetmonkey-current-date-time" />
+                <input
+                  type="hidden"
+                  name="Data_do_Acesso"
+                  value="x-sheetmonkey-current-date-time"
+                />
 
-                <input type="tel" id="telefone" name="Telefones" required placeholder="DDD+WhatsApp " />
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="Telefones"
+                  required
+                  placeholder="DDD+WhatsApp "
+                />
 
-                <button type="submit" class="btnEnviar" id="botaoEnviar">Enviar</button>
+                <button type="submit" class="btnEnviar" id="botaoEnviar">
+                  Enviar
+                </button>
               </div>
               <button type="submit" class="btnEnviar700px">Enviar</button>
             </form>
-            <div id="alertaSucesso" class="alerta-sucesso">✅ Formulário enviado com sucesso!</div>
+            <div id="alertaSucesso" class="alerta-sucesso">
+              ✅ Formulário enviado com sucesso!
+            </div>
           </div>
         </div>
         <div class="box-blue">
@@ -72,8 +125,6 @@
       </div>
     </main>
 
-    <script src="scripts.js"></script>                              
-     
-
+    <script src="scripts.js"></script>
   </body>
 </html>

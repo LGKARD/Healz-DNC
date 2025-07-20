@@ -2,6 +2,20 @@ const form = document.getElementById('formulario');
 const alerta = document.getElementById('alertaSucesso');
 
 form.addEventListener('submit', function (event) {
+  const dataConsulta = new Date();
+  dataConsulta.setHours(11, 0, 0, 0);
+
+  const dataAcesso = new Date();
+  const diferencaMinutos = (dataConsulta - dataAcesso) / (1000 * 60);
+
+  if (diferencaMinutos > 15) {
+    alert("O check-in deve ser feito com no mínimo 15 minutos de antecedência da consulta.");
+    event.preventDefault();
+    return;
+  }
+
+
+
   const nome = document.getElementById('nome').value.trim();
   const cidade = document.getElementById('cidade').value.trim();
   const plano = document.getElementById('plano').value.trim();
