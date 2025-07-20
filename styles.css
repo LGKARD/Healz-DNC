@@ -16,9 +16,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 ::placeholder {
     font-size: 12px;
 }
+
 main {
     width: 100%;
     max-width: 60rem;
@@ -152,108 +154,129 @@ input.dtVencimento {
 
 
 .alerta-sucesso {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: #28a745;
-  color: white;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  font-weight: bold;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 1000;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #28a745;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
 }
 
 .alerta-sucesso.mostrar {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
-.btnEnviar700px{
+
+.btnEnviar700px {
     display: none;
 }
-.todo{
+
+.todo {
     display: none;
 }
+
 @media (max-width: 800px) {
-    .box-blue, .btnEnviar {
+
+    .box-blue,
+    .btnEnviar {
         display: none;
-    }    
-    body{
+    }
+
+    body {
         display: inline;
     }
-    .todo{
+
+    .todo {
         display: flex;
         justify-content: center;
         margin: 1rem 0 1rem 0;
         height: 20%;
     }
-    .container{
+
+    .container {
         justify-content: center;
         border-radius: 0;
 
     }
+
     .formulario input {
         width: 92%;
         margin: 0 1rem 0 1rem;
     }
-    .btnEnviar700px{
+
+    .btnEnviar700px {
         display: flex;
     }
-    .box-grey{
+
+    .box-grey {
         height: 95%;
         border-radius: 1rem;
     }
+
     img {
         width: 70%;
         height: 70%;
         display: flex;
         justify-content: center;
     }
-    
+
 }
 
 @media (max-width: 600px) {
-    .linha-dupla{
+    .linha-dupla {
         display: inline;
     }
+
     .formulario input {
         width: 80%;
     }
-    .dtVencimento{
+
+    .dtVencimento {
         margin-top: 1rem !important;
     }
-    .box-grey{
+
+    .box-grey {
         height: 99%;
         width: 70% !important;
     }
-    .box-form{
+
+    .box-form {
         max-height: 28rem;
     }
-    .box-form h1{
+
+    .box-form h1 {
         font-size: 20px;
         text-align: center;
     }
+
     img {
         width: 70%;
         height: 70%;
         display: flex;
         justify-content: center;
     }
-    .container{
+
+    .container {
         justify-content: center;
         border-radius: 0;
-        
+
     }
-    
+
 }
+
 @media (max-width: 500px) {
-        .box-grey{
+    .box-grey {
         height: 99%;
         width: 90% !important;
     }
+
     img {
         width: 70%;
         height: 70%;
@@ -261,5 +284,5 @@ input.dtVencimento {
         justify-content: center;
         margin-top: 1rem;
     }
-    
+
 }
